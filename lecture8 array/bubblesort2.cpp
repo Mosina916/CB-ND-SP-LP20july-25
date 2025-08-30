@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+int main(){
+	
+	// int arr[5]={5,4,3,2,1};
+
+	// int n=5;
+
+	int arr[100];
+	int n;
+	cin>>n;//7
+	for (int i = 0; i <n;i++)
+	{
+		cin>>arr[i];
+	}
+
+	for(int j=1;j<=n-1;j++){
+
+
+	for(int i=0;i<=n-j-1;i++){
+		if(arr[i]>arr[i+1]){
+			// swap(arr[i],arr[i+1]);
+			// int c=arr[i];
+			// arr[i]=arr[i+1];
+			// arr[i+1]=c;
+
+
+			// without 3rd variable
+			// arr[i+1]=arr[i]+arr[i+1];arr[i]=arr[i+1]-arr[i];
+			// arr[i+1]=arr[i+1]-arr[i];\
+
+
+			// single line
+
+			arr[i]=(arr[i]+arr[i+1])-(arr[i+1]=arr[i]);
+		}
+	}
+}
+	
+	// 1 2 3 4 5
+
+
+	for (int i = 0; i <=n-1; ++i)
+	{
+		cout<<arr[i]<<" ";
+	}
+
+	cout<<endl;
+	
+
+
+	return 0;
+}
